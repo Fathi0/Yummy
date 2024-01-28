@@ -4,7 +4,7 @@ body {
 }
 .sideNav{
     left: 0;
-    z-index: 99999;
+    z-index: 99;
 }
 .navBody{
     background-color: #0D0D0D;
@@ -44,6 +44,7 @@ i {
 
 .area {
     cursor: pointer;
+    
 
 }
 
@@ -58,7 +59,7 @@ i {
 
 .inner-loading-screen {
     position: absolute;
-    z-index: 9;
+    z-index: 999;
     background-color: #0D0D0D;
     display: flex;
 }

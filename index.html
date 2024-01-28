@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body >
 
@@ -24,6 +25,26 @@
     </div>
     <!-- !end loading screen -->
         <!-- ?Start NavSide -->
+        <nav class="navbar text-white navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="w-25" src="images/logo.png" alt=""></a>
+              <h1 class="text-center">Yummy</h1>
+              <button class="text-white navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="  navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div  class="items">
+                    <ul class="list-unstyled overflow-hidden">
+                        <li  id="search" onclick="displaysearchInput()"  class="py-2 ">Search</li>
+                        <li id="categories" class="py-2  ">Categories</li>
+                        <li id="area" class="py-2 ">Area</li>
+                        <li id="ingredient" class="py-2 ">Ingredients</li>
+                        <li onclick=" displayContact()" id="Contact" class=" animate__backInUp py-2">Contact Us</li>
+                    </ul>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div id="sideNav" class="sideNav position-fixed d-flex top-0">
             <div id="navItems" class="navBody d-flex  flex-column justify-content-between min-vh-100 p-4">
                 <div  class="items">

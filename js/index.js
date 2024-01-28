@@ -96,6 +96,7 @@ async function getMeals(name = '') {
     $(".inner-loading-screen").fadeOut(300);
 
 }
+
 async function getMealFirstLatter(mealLetter="a") {
     document.getElementById('searchByName').innerHTML = '';
     document.getElementById('ingrediant').innerHTML = '';
@@ -113,7 +114,7 @@ function displayMeals(data) {
         temp += `   <div class="col-md-3 "  >
                          <div class="position-relative maindiv mealmain  overflow-hidden rounded" meal-id=${e.idMeal}>
                                  <img src="${(e.strMealThumb == null) ? 'images/banner.png' : e.strMealThumb}" class="w-100" meal-id=${e.idMeal}  alt="">
-                            <div class="layer details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
+                            <div class="layer text-center details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
                                   <h5 meal-id=${e.idMeal} class="text-black fs-3" >${e.strMeal}</h5>
                             </div>
                         </div>
@@ -211,7 +212,7 @@ function displaycategores(data) {
         temp += `   <div class="col-md-3 "  >
                          <div class="position-relative maindiv mealmain  overflow-hidden rounded" meal-id=${e.idMeal}>
                                  <img src="${(e.strMealThumb == null) ? 'images/banner.png' : e.strMealThumb}" class="w-100" meal-id=${e.idMeal}  alt="">
-                            <div class="layer details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
+                            <div class="layer text-center details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
                                   <h5 meal-id=${e.idMeal} class="text-black fs-3" >${e.strMeal}</h5>
                             </div>
                         </div>
@@ -246,7 +247,7 @@ function displaycategory(data) {
         temp += `   <div class="col-md-3">
         <div  categorymeal=${e.strCategory} class="position-relative maindiv category overflow-hidden rounded">
             <img src="${(e.strCategoryThumb == null) ? 'images/banner.png' : e.strCategoryThumb}" class="w-100" categorymeal=${e.strCategory} alt="">
-            <div class="layer position-absolute pt-2 d-flex flex-column text-black text-center" categorymeal=${e.strCategory}>
+            <div class="layer text-center position-absolute pt-2 d-flex flex-column text-black text-center" categorymeal=${e.strCategory}>
                 <h5 categorymeal=${e.strCategory} class=" fs-3">${e.strCategory}</h5>
                 <p  categorymeal=${e.strCategory}>${(e.strCategoryDescription == null) ? 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus animi eveniet deserunt eaque tenetur, voluptatibus neque vel debitis eos explicabo!' : e.strCategoryDescription.split(" ").slice(0, 20).join(" ")}</p>
             </div>
@@ -313,7 +314,7 @@ function displayAreas(data) {
         temp += `   <div class="col-md-3 "  >
                          <div class="position-relative maindiv mealmain  overflow-hidden rounded" meal-id=${e.idMeal}>
                                  <img src="${(e.strMealThumb == null) ? 'images/banner.png' : e.strMealThumb}" class="w-100" meal-id=${e.idMeal}  alt="">
-                            <div class="layer details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
+                            <div class="layer text-center details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
                                   <h5 meal-id=${e.idMeal} class="text-black fs-3" >${e.strMeal}</h5>
                             </div>
                         </div>
@@ -389,7 +390,7 @@ function displayMealIngredient(data) {
         temp += `   <div class="col-md-3 "  >
                          <div class="position-relative maindiv mealmain  overflow-hidden rounded" meal-id=${e.idMeal}>
                                  <img src="${(e.strMealThumb == null) ? 'images/banner.png' : e.strMealThumb}" class="w-100" meal-id=${e.idMeal}  alt="">
-                            <div class="layer details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
+                            <div class="layer text-center details position-absolute d-flex align-items-center" meal-id=${e.idMeal} >
                                   <h5 meal-id=${e.idMeal} class="text-black fs-3" >${e.strMeal}</h5>
                             </div>
                         </div>

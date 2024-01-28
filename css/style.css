@@ -1,0 +1,67 @@
+body {
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+}
+.side-nav{
+    left: 0;
+    z-index: 99999;
+}
+.navBody{
+    background-color: #0D0D0D;
+}
+.items ul li {
+    position: relative;
+    cursor: pointer;
+
+}
+.open-nav{
+    width: 10%;
+}
+li,
+i {
+    cursor: pointer;
+}
+.maindiv:hover .layer {
+    top: 0%;
+}
+
+.layer {
+    top: 100%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.826);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.mealmain {
+    cursor: pointer;
+}
+
+.category {
+    cursor: pointer;
+
+}
+
+.area {
+    cursor: pointer;
+
+}
+
+.ingredient {
+    cursor: pointer;
+
+}
+.loading-screen {
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen {
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+#searchContainer input::placeholder {
+    color: #fff !important;
+  }
